@@ -1,6 +1,6 @@
 var static = require('node-static');
 var sys = require('sys');
-var fileServer = new static.Server('./game');
+var fileServer = new static.Server('game');
 
 require('http').createServer(function (request, response) {
     request.addListener('end', function () {
@@ -14,6 +14,6 @@ require('http').createServer(function (request, response) {
             }
         });
     }).resume();
-}).listen(8080, function (){
-    console.log('Game started on localhost:8080');
+}).listen(8000, function (){
+    console.log('Game started on localhost:8000');
 });
