@@ -20,4 +20,5 @@ Requirements:
     `python3 -m http.server`
 
   This opens a simple http server on our project root and allows us to play the game locally. 
-5. Go to `localhost:8000/game/`
+5. Run `grunt` on project root.
+6. Go to `localhost:8000/game/`
