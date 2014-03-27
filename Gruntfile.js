@@ -86,7 +86,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'build/<%= pkg.name %>-<%= pkg.version %>-min.js': [
+                    'game/build/<%= pkg.name %>-<%= pkg.version %>-min.js': [
                         '<%= concat.dist.dest %>'
                     ]
                 }
@@ -113,11 +113,11 @@ module.exports = function(grunt) {
 
         clean: {
             dist: [
-                'build/<%= pkg.name %>-<%= pkg.version %>.js',
-                'build/<%= pkg.name %>-<%= pkg.version %>-min.js'
+                'game/build/<%= pkg.name %>-<%= pkg.version %>.js',
+                'game/build/<%= pkg.name %>-<%= pkg.version %>-min.js'
             ],
             jsdoc: [
-                'build/docs',
+                'game/build/docs',
                 './docs/**/*.*',
                 './docs/scripts',
                 './docs/styles',
@@ -128,7 +128,7 @@ module.exports = function(grunt) {
         jsdoc : {
             dist : {
                 src: sourceFiles.map(function (value) {
-                    return value.replace('src/', 'build/docs/src/');
+                    return value.replace('src/', 'game/build/docs/src/');
                 }).concat([ 'README.md' ]),
                 options: {
                     configure: 'jsdoc_conf.json',
