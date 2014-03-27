@@ -1,14 +1,14 @@
 {
-  "name": "melonJS",
-  "version": "0.9.11",
-  "description": "MelonJS Game Engine",
-  "homepage": "http://www.melonjs.org/",
+  "name": "EnoruEco",
+  "version": "0.0.1",
+  "description": "A Game",
+  "homepage": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/melonjs/melonJS"
+    "url": "https://github.com/Smoss/Enoru-eco"
   },
   "bugs": {
-    "url": "https://github.com/melonjs/melonJS/issues"
+    "url": "https://github.com/Smoss/Enoru-eco/issues"
   },
   "licenses": [
     {
@@ -17,8 +17,8 @@
     }
   ],
   "author": {
-    "name": "melonJS",
-    "email": "contact@melonjs.org"
+    "name": "Smoss",
+    "email": ""
   },
   "engines": {
     "node": ">= 0.8.0"
