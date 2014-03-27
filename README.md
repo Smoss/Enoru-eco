@@ -6,7 +6,6 @@ Enoru-eco
 
 Requirements: 
 - Node.js
-- Python 2.7 or 3.3
 
 1. Download the project
 3. run `npm install` followed by `bower install`
