@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         concat: {
             dist: {
                 src: sourceFiles,
-                dest: 'build/<%= pkg.name %>-<%= pkg.version %>.js'
+                dest: 'game/build/<%= pkg.name %>-<%= pkg.version %>.js'
             }
         },
 
@@ -62,8 +62,8 @@ module.exports = function(grunt) {
                     {
                         expand: true,
                         flatten: true,
-                        src: [ 'build/<%= pkg.name %>-<%= pkg.version %>.js' ],
-                        dest: 'build/'
+                        src: [ 'game/build/<%= pkg.name %>-<%= pkg.version %>.js' ],
+                        dest: 'game/build/'
                     }
                 ]
             },
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
                     {
                         expand: true,
                         src: sourceFiles.concat([ 'README.md' ]),
-                        dest: 'build/docs/'
+                        dest: 'game/build/docs/'
                     }
                 ]
             }

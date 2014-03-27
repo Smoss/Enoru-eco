@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/melonjs/melonJS"
   },
+  "scripts": {
+    "start": "node app.js"
+  },
   "bugs": {
     "url": "https://github.com/melonjs/melonJS/issues"
   },
@@ -23,7 +26,9 @@
   "engines": {
     "node": ">= 0.8.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "node-static": "~0.7.3"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.6.4",
