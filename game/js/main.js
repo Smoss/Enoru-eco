@@ -34,7 +34,7 @@ var game = {
       
         // Load the resources.
         me.loader.preload(game.resources);
- 
+
         // Initialize melonJS and display a loading screen.
         me.state.change(me.state.LOADING);
     },
@@ -42,8 +42,27 @@ var game = {
  
  
     // Run on game resources loaded.
-    loaded: function () {
+    "loaded": function () {
+       // set the "Play/Ingame" Screen Object
+        //me.state.set(me.state.MENU, new game.TitleScreen());
+      
+        // set the "Play/Ingame" Screen Object
+        //me.state.set(me.state.PLAY, new game.PlayScreen());
+        //me.pool.register("mainPlayer", game.PlayerEntity);
+        //me.pool.register("CoinEntity", game.CoinEntity);
+        //me.pool.register("EnemyEntity", game.EnemyEntity);
+
+        //me.state.set(me.state.MENU, new game.TitleScreen());
         me.state.set(me.state.PLAY, new game.PlayScreen());
+
+
+        me.entityPool.add("mainPlayer", game.PlayerEntity);
+                  
+        // enable the keyboard
+        me.input.bindKey(me.input.KEY.LEFT,  "left");
+        me.input.bindKey(me.input.KEY.RIGHT, "right");
+        me.input.bindKey(me.input.KEY.DOWN,  "down");
+        me.input.bindKey(me.input.KEY.UP,    "up");
  
         // Start the game.
         me.state.change(me.state.PLAY);

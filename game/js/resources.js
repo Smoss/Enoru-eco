@@ -6,7 +6,12 @@ game.resources = [
      */
     // our level tileset
     {name: "blue",  type:"image", src: "data/blue.png"},
-    {name: "gripe_run_right", type:"image", src: "data/img/sprite/gripe_run_right.png"},
+
+
+    /**
+     * Player
+     */
+    {name: "player", type:"image", src: "data/img/sprite/player.png"},
     /* 
      * Maps. 
      */
