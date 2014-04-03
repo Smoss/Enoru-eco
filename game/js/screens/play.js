@@ -7,7 +7,7 @@ game.PlayScreen = me.ScreenObject.extend({
     onResetEvent: function() {  
      
         // load a level
-        me.levelDirector.loadLevel("map");
+        me.levelDirector.loadLevel("treesmap");
          
         // reset the score
         game.data.score = 0;
