@@ -1,3 +1,4 @@
+/* globals game */
 /*------------------- 
 a player entity
 -------------------------------- */
@@ -32,12 +33,12 @@ game.PlayerEntity = me.ObjectEntity.extend({
             // flip the sprite on horizontal axis
             // update the entity velocity
             this.vel.x -= this.accel.x * me.timer.tick;
-            this.vel.y = 0
+            this.vel.y = 0;
         } else if (me.input.isKeyPressed('right')) {
             // unflip the sprite
             // update the entity velocity
             this.vel.x += this.accel.x * me.timer.tick;
-            this.vel.y = 0
+            this.vel.y = 0;
         }
         else {
             this.vel.x = 0;
@@ -57,7 +58,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
         this.updateMovement();
  
         // update animation if necessary
-        if (this.vel.x!=0 || this.vel.y!=0) {
+        if (this.vel.x !== 0 || this.vel.y !== 0) {
             // update object animation
             this.parent();
             return true;
