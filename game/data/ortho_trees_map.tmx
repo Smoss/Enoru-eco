@@ -15,5 +15,11 @@
     <property name="spriteWidth" value="16"/>
    </properties>
   </object>
+  <object name="blockman" x="10" y="111" width="16" height="16">
+   <properties>
+    <property name="image" value="player"/>
+    <property name="spriteWidth" value="16"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

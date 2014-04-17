@@ -57,6 +57,7 @@ var game = {
 
 
         me.entityPool.add("mainPlayer", game.PlayerEntity);
+        me.entityPool.add("blockman", game.PlayerEntity);
                   
         // enable the keyboard
         me.input.bindKey(me.input.KEY.LEFT,  "left");
@@ -68,3 +69,13 @@ var game = {
         me.state.change(me.state.PLAY);
     }
 };
+
+game.TitleScreen = me.ScreenObject.extend({
+    // reset function
+    onResetEvent: function() {
+    },
+ 
+    // destroy function
+    onDestroyEvent: function() {
+    }
+});

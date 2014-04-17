@@ -10,6 +10,7 @@ game.resources = [
     {name : "grasstest", type: "image", src: "data/grasstest.png"},
     {name : "treessmooth", type: "image", src: "data/treessmooth.png"},
     {name: "player", type:"image", src: "data/img/sprite/player.png"},
+    {name: "blockman", type:"image", src: "data/img/sprite/player.png"},
     /* 
      * Maps. 
      */
