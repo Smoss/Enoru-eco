@@ -14,7 +14,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
         // call the constructor
         this.parent(x, y, settings);
         // set the default horizontal & vertical speed (accel vector)
-        this.setVelocity((3), (3));
+        this.setVelocity(3, 3);
  
         // set the display to follow our position on both axis
         me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
@@ -67,29 +67,14 @@ game.PlayerEntity = me.ObjectEntity.extend({
         // else inform the engine we did not perform
         // any update (e.g. position, animation)
         return false;
-    }
+    },
     /* ---
      
        callback when everything is loaded
          
        ---  */
-         
-    /*"loaded" : function ()
-    {
-       // set the "Play/Ingame" Screen Object
-       me.state.set(me.state.PLAY, new game.PlayScreen());
-         
-       // add our player entity in the entity pool
-       me.entityPool.add("mainPlayer", game.PlayerEntity);
-                 
-       // enable the keyboard
-       me.input.bindKey(me.input.KEY.LEFT,  "left");
-       me.input.bindKey(me.input.KEY.RIGHT, "right");
-       me.input.bindKey(me.input.KEY.DOWN,  "down");
-       me.input.bindKey(me.input.KEY.UP,  "up");
-          
-       // start the game 
-       me.state.change(me.state.PLAY);
-    }*/
- 
+
+    loaded: function (){
+
+    }
 });
