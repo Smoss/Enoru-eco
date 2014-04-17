@@ -5,11 +5,8 @@ a player entity
 game.PlayerEntity = me.ObjectEntity.extend({
  
     /* -----
- 
-    constructor
- 
+    constructor 
     ------ */
- 
     init: function(x, y, settings) {
         // call the constructor
         this.parent(x, y, settings);
@@ -26,9 +23,7 @@ game.PlayerEntity = me.ObjectEntity.extend({
     },
  
     /* -----
- 
     update the player pos
- 
     ------ */
     update: function(dt) {
         if (me.input.isKeyPressed('left')) {
@@ -70,12 +65,10 @@ game.PlayerEntity = me.ObjectEntity.extend({
         // any update (e.g. position, animation)
         return false;
     },
-    /* ---
-     
-       callback when everything is loaded
-         
-       ---  */
 
+    /* ---
+       callback when everything is loaded
+       ---  */
     loaded: function (){
 
     }
