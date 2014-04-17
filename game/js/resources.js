@@ -9,8 +9,8 @@ game.resources = [
     {name: 'trees_ortho', type: 'image', src: 'data/trees_ortho.png'},
     {name: 'collisiontiles', type: 'image', src: 'data/collisiontiles.png'},
     {name: "water", type: "image", src: "data/water.png"},
-    {name : "grasstest", type: "image", src: "data/grasstest.png"},
-    {name : "treessmooth", type: "image", src: "data/treessmooth.png"},
+    {name: "grasstest", type: "image", src: "data/grasstest.png"},
+    {name: "treessmooth", type: "image", src: "data/treessmooth.png"},
     {name: "player", type:"image", src: "data/img/sprite/player.png"},
     {name: "blockman", type:"image", src: "data/img/sprite/player.png"},
     /* 
