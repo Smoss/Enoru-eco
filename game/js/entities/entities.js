@@ -104,6 +104,28 @@ game.staticEntity = me.ObjectEntity.extend({
  
     ------ */
     update: function(dt) {
+        dir = Math.floor(Math.random() * 4)
+        if(dir == 0){
+            this.vel.x = 0;
+            this.vel.y = 0;
+            this.vel.x -= Math.floor(Math.random() * 4);
+        }else if(dir == 1){
+            this.vel.x = 0;
+            this.vel.y = 0;
+            this.vel.x += Math.floor(Math.random() * 4);
+        }else if(dir == 2){
+            this.vel.x = 0;
+            this.vel.y = 0;
+            this.vel.y -= Math.floor(Math.random() * 4);
+        }else{
+            this.vel.x = 0;
+            this.vel.y = 0;
+            this.vel.y += Math.floor(Math.random() * 4);
+        }
+
+        this.updateMovement();
+        
+        return false;
         /*if (me.input.isKeyPressed('left')) {
             // flip the sprite on horizontal axis
             // update the entity velocity
