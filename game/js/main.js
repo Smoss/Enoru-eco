@@ -57,7 +57,7 @@ var game = {
 
 
         me.entityPool.add("mainPlayer", game.PlayerEntity);
-        me.entityPool.add("blockman", game.PlayerEntity);
+        me.entityPool.add("blockman", game.staticEntity);
                   
         // enable the keyboard
         me.input.bindKey(me.input.KEY.LEFT,  "left");
