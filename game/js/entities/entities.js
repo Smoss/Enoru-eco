@@ -20,6 +20,8 @@ game.PlayerEntity = me.ObjectEntity.extend({
         me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
 
         this.gravity = 0;
+
+        this.update();
  
     },
  
