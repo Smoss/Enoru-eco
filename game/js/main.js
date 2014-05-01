@@ -42,7 +42,7 @@ var game = {
  
  
     // Run on game resources loaded.
-    "loaded": function () {
+    loaded: function () {
        // set the "Play/Ingame" Screen Object
         me.state.set(me.state.MENU, new game.TitleScreen());
       
@@ -99,7 +99,7 @@ game.TitleScreen = me.ScreenObject.extend({
             },
             onDestroyEvent : function() {
             }
-        })), 2);
+        }))(), 2);
 
         // change to play state on press Enter or click/tap
         me.input.bindKey(me.input.KEY.ENTER, "enter", true);
