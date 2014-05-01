@@ -1,4 +1,4 @@
-/* globals debugPanel */
+/* globals debugPanel, aStarPlugin */
 /* game namespace */
 var game = {
  
@@ -7,7 +7,10 @@ var game = {
      */
 
     data: {
-
+        player_location: {
+            x: 0,
+            y: 0
+        }
     },
      
     // Run on page load.
@@ -18,6 +21,9 @@ var game = {
             alert("Your browser does not support HTML5 canvas. Get a better browser.");
             return;
         }
+
+        // A*
+        me.plugin.register(aStarPlugin, "astar");
          
         // add "#debug" to the URL to enable the debug Panel
         if (document.location.hash === "#debug") {

@@ -9,6 +9,7 @@ game.resources = [
     {name: '32x32_font', type: 'image', src: 'data/img/font/32x32_font.png'},
     {name: 'title_screen', type: 'image', src: 'data/img/gui/title_screen.png'},
     {name: 'trees_ortho', type: 'image', src: 'data/trees_ortho.png'},
+    {name: 'bricktiles', type: 'image', src: 'data/bricktiles.png'},
     {name: 'collisiontiles', type: 'image', src: 'data/collisiontiles.png'},
     {name: "water", type: "image", src: "data/water.png"},
     {name: "grasstest", type: "image", src: "data/grasstest.png"},
@@ -24,6 +25,6 @@ game.resources = [
     /* 
      * Maps. 
      */
-    {name: "treesmap", type: "tmx", src: "data/ortho_trees_map.tmx"}
+    {name: "treesmap", type: "tmx", src: "data/wall_map.tmx"}
     //{name: "treesmap", type: "tmx", src: "data/treesmap.tmx"}
 ];

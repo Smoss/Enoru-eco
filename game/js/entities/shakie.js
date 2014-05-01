@@ -13,9 +13,6 @@ game.staticEntity = me.ObjectEntity.extend({
         this.parent(x, y, settings);
         // set the default horizontal & vertical speed (accel vector)
         this.setVelocity(3, 3);
- 
-        // set the display to follow our position on both axis
-        me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
 
         this.gravity = 0;
 
@@ -49,6 +46,9 @@ game.staticEntity = me.ObjectEntity.extend({
         }
 
         this.updateMovement();
+
+        var player_loc = game.data.player_location;
+        me.astar.search(player_loc.x, player_loc.y, this.pos.x, this.pos.y);
         
         return true;
     },
