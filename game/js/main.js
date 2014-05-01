@@ -73,13 +73,7 @@ var game = {
 game.TitleScreen = me.ScreenObject.extend({
     onResetEvent: function() {  
         // title screen
-        me.game.world.addChild(
-            new me.SpriteObject (
-                0,0, 
-                me.loader.getImage('title_screen')
-            ),
-            1
-        );
+        me.game.world.addChild(new me.SpriteObject(0, 0, me.loader.getImage('title_screen')), 1);
 
         // add a new renderable component with the scrolling text
         me.game.world.addChild(new (me.Renderable.extend ({

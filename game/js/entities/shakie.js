@@ -50,7 +50,7 @@ game.staticEntity = me.ObjectEntity.extend({
 
         this.updateMovement();
         
-        return false;
+        return true;
         /*if (me.input.isKeyPressed('left')) {
             // flip the sprite on horizontal axis
             // update the entity velocity
