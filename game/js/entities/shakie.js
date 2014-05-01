@@ -46,6 +46,9 @@ game.staticEntity = me.ObjectEntity.extend({
         }
 
         this.updateMovement();
+
+        var player_loc = game.data.player_location;
+        me.astar.search(player_loc.x, player_loc.y, this.pos.x, this.pos.y);
         
         return true;
     },

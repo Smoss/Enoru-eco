@@ -51,6 +51,8 @@ game.PlayerEntity = me.ObjectEntity.extend({
             this.vel.y = 0;
         }
  
+        game.data.player_location.x = this.pos.x;
+        game.data.player_location.y = this.pos.y;
         // check & update player movement
         this.updateMovement();
  

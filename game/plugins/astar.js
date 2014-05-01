@@ -374,7 +374,7 @@
     
     aStarPlugin = me.plugin.Base.extend({
         /** @scope me.astar.prototype */
-        version : "0.9.8",
+        version : "0.0.1",
         
         init: function() {
             // call parent constructor
