@@ -15,6 +15,12 @@ game.resources = [
     {name: "treessmooth", type: "image", src: "data/treessmooth.png"},
     {name: "player", type:"image", src: "data/img/sprite/player.png"},
     {name: "blockman", type:"image", src: "data/img/sprite/player.png"},
+
+    // Title screen image
+    {name: 'title_screen', type: 'image', src: 'data/img/gui/title_screen.png'},
+
+    // Font
+    {name: "32x32_font",          type:"image", src: "data/img/font/32x32_font.png"},
     /* 
      * Maps. 
      */
