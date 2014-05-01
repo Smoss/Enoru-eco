@@ -6,6 +6,8 @@ game.resources = [
      */
     // our level tileset
     //{name: "blue", type: "image", src: "data/blue.png"},
+    {name: '32x32_font', type: 'image', src: 'data/img/font/32x32_font.png'},
+    {name: 'title_screen', type: 'image', src: 'data/img/gui/title_screen.png'},
     {name: 'trees_ortho', type: 'image', src: 'data/trees_ortho.png'},
     {name: 'collisiontiles', type: 'image', src: 'data/collisiontiles.png'},
     {name: "water", type: "image", src: "data/water.png"},
