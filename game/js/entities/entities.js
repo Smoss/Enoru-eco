@@ -88,13 +88,10 @@ game.staticEntity = me.ObjectEntity.extend({
         this.setVelocity(3, 3);
  
         // set the display to follow our position on both axis
-        me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
 
         this.gravity = 0;
 
         this.update();
-
-        countDown = 100;
  
     },
  
@@ -124,7 +121,7 @@ game.staticEntity = me.ObjectEntity.extend({
         }
 
         this.updateMovement();
-        
+
         return false;
         /*if (me.input.isKeyPressed('left')) {
             // flip the sprite on horizontal axis
