@@ -60,6 +60,11 @@ game.PlayerEntity = me.ObjectEntity.extend({
             this.parent();
             return true;
         }
+        
+        if (me.input.isKeyPressed('a')) {
+            this.stab('left');
+
+        }
          
         // else inform the engine we did not perform
         // any update (e.g. position, animation)
@@ -71,5 +76,8 @@ game.PlayerEntity = me.ObjectEntity.extend({
        ---  */
     loaded: function (){
 
+    },
+    stab: function (dir){
+        
     }
 });
