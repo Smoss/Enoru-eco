@@ -26,6 +26,7 @@ game.staticEntity = me.ObjectEntity.extend({
  
     ------ */
     update: function(dt) {
+        /*
         var dir = Math.floor(Math.random() * 4);
         if(dir === 0) {
             this.vel.x = 0;
@@ -44,14 +45,19 @@ game.staticEntity = me.ObjectEntity.extend({
             this.vel.y = 0;
             this.vel.y += Math.floor(Math.random() * 4);
         }
+        */
 
-        this.updateMovement();
 
-        var player_loc = game.data.player_location;
-        console.log(me.plugin.astar);
-        me.plugin.astar.refresh();
-        console.log(me.astar);
-        console.log(me.astar.search(player_loc.x, player_loc.y, this.pos.x, this.pos.y));
+        // var player_loc = game.data.player_location;
+        // me.plugin.astar.refresh();
+        // var nodes = me.astar.search(player_loc.x, player_loc.y, this.pos.x, this.pos.y);
+        // console.log(nodes);
+        // if (typeof nodes[0] !== 'undefined'){
+        //     this.vel.x = nodes[0].pos.x;
+        //     this.vel.y = nodes[0].pos.y;
+        // }
+        // this.updateMovement();
+
         
         return true;
     },

@@ -323,7 +323,6 @@
         if (me.game.collisionMap == null) {
             return; // nothing to do
         }
-        console.log(me.game);
         // hook into level data to generate the graph
         // Get the collision layer reference.
         
