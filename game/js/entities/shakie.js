@@ -48,10 +48,10 @@ game.staticEntity = me.ObjectEntity.extend({
         this.updateMovement();
 
         var player_loc = game.data.player_location;
-        console.log(me.plugin.astar);
-        me.plugin.astar.refresh();
-        console.log(me.astar);
-        console.log(me.astar.search(player_loc.x, player_loc.y, this.pos.x, this.pos.y));
+        //console.log(me.plugin.astar);
+        //me.plugin.astar.refresh();
+        //console.log(me.astar);
+        //console.log(me.astar.search(player_loc.x, player_loc.y, this.pos.x, this.pos.y));
         
         return true;
     },
