@@ -45,6 +45,15 @@ game.staticEntity = me.ObjectEntity.extend({
             this.vel.y += Math.floor(Math.random() * 4);
         }
 
+
+        // var player_loc = game.data.player_location;
+        // me.plugin.astar.refresh();
+        // var nodes = me.astar.search(player_loc.x, player_loc.y, this.pos.x, this.pos.y);
+        // console.log(nodes);
+        // if (typeof nodes[0] !== 'undefined'){
+        //     this.vel.x = nodes[0].pos.x;
+        //     this.vel.y = nodes[0].pos.y;
+        // }
         this.updateMovement();
 
         var player_loc = game.data.player_location;
