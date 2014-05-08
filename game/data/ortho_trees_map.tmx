@@ -20,13 +20,13 @@
   </data>
  </layer>
  <objectgroup name="Object Layer 1" width="22" height="11">
-  <object name="Blockman" x="359" y="98" width="16" height="16">
+  <object name="Blockman" x="318" y="304" width="64" height="128">
    <properties>
     <property name="image" value="player"/>
     <property name="spriteWidth" value="16"/>
    </properties>
   </object>
-  <object name="mainPlayer" x="63" y="128" width="16" height="16">
+  <object name="mainPlayer" x="23" y="138" width="64" height="128">
    <properties>
     <property name="image" value="player"/>
     <property name="spriteWidth" value="16"/>

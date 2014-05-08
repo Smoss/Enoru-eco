@@ -22,16 +22,16 @@
   </data>
  </layer>
  <objectgroup name="Object Layer 1" width="22" height="11">
-  <object name="Blockman" x="23" y="357" width="27" height="34">
+  <object name="Blockman" x="265" y="417" width="64" height="128">
    <properties>
-    <property name="image" value="player"/>
-    <property name="spriteWidth" value="16"/>
+    <property name="image" value="brenne_standin"/>
+    <property name="spriteWidth" value="64"/>
    </properties>
   </object>
-  <object name="mainPlayer" x="84" y="487" width="23" height="25">
+  <object name="mainPlayer" x="84" y="487" width="64" height="128">
    <properties>
-    <property name="image" value="player"/>
-    <property name="spriteWidth" value="16"/>
+    <property name="image" value="cora_standin"/>
+    <property name="spriteWidth" value="64"/>
    </properties>
   </object>
  </objectgroup>

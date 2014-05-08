@@ -14,8 +14,8 @@ game.resources = [
     {name: "water", type: "image", src: "data/water.png"},
     {name: "grasstest", type: "image", src: "data/grasstest.png"},
     {name: "treessmooth", type: "image", src: "data/treessmooth.png"},
-    {name: "player", type:"image", src: "data/img/sprite/player.png"},
-    {name: "blockman", type:"image", src: "data/img/sprite/player.png"},
+    {name: "player", type:"image", src: "data/img/sprite/cora_standin.png"},
+    {name: "blockman", type:"image", src: "data/img/sprite/brenne_standin.png"},
 
     // Title screen image
     {name: 'title_screen', type: 'image', src: 'data/img/gui/title_screen.png'},

@@ -81,5 +81,24 @@ game.PlayerEntity = me.ObjectEntity.extend({
     },
     stab: function (dir){
         
+        
     }
+});
+
+game.PlayerEntity.Weapon = me.SpriteObject.extend({
+    init: function(x, y, settings) {
+        // call the constructor
+        this.parent(x, y, settings);
+        // set the default horizontal & vertical speed (accel vector)
+        this.setVelocity(5, 5);
+ 
+        // set the display to follow our position on both axis
+        me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
+
+        this.gravity = 0;
+
+        this.update();
+ 
+    }
+
 });
