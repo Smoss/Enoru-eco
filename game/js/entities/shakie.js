@@ -26,7 +26,6 @@ game.staticEntity = me.ObjectEntity.extend({
  
     ------ */
     update: function(dt) {
-        /*
         var dir = Math.floor(Math.random() * 4);
         if(dir === 0) {
             this.vel.x = 0;
@@ -45,7 +44,6 @@ game.staticEntity = me.ObjectEntity.extend({
             this.vel.y = 0;
             this.vel.y += Math.floor(Math.random() * 4);
         }
-        */
 
 
         // var player_loc = game.data.player_location;
@@ -56,7 +54,7 @@ game.staticEntity = me.ObjectEntity.extend({
         //     this.vel.x = nodes[0].pos.x;
         //     this.vel.y = nodes[0].pos.y;
         // }
-        // this.updateMovement();
+        this.updateMovement();
 
         
         return true;
