@@ -22,7 +22,7 @@
   </data>
  </layer>
  <objectgroup name="Object Layer 1" width="22" height="11">
-  <object name="Blockman" x="265" y="414" width="64" height="128">
+  <object name="Blockman" x="265" y="414" width="64" height="64">
    <properties>
     <property name="image" value="blockman"/>
     <property name="spriteWidth" value="64"/>
