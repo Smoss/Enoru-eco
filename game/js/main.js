@@ -59,10 +59,6 @@ var game = {
 
         //me.state.set(me.state.MENU, new game.TitleScreen());
         //me.state.set(me.state.PLAY, new game.PlayScreen());
-
-
-        me.entityPool.add("mainPlayer", game.PlayerEntity);
-        me.entityPool.add("blockman", game.staticEntity);
                   
         // enable the keyboard
         me.input.bindKey(me.input.KEY.A , "a");
@@ -143,10 +139,14 @@ game.TitleScreen = me.ScreenObject.extend({
                 console.log(mousePos);
                 if(mousePos.x > 125 && mousePos.y > 200
                     && mousePos.x < 285 && mousePos.y < 270) {
+                    me.entityPool.add("mainPlayer", game.PlayerEntity);
+                    me.entityPool.add("blockman", game.staticEntity);
                     me.state.change(me.state.PLAY);
                 }
                 if(mousePos.x > 320 && mousePos.y > 200
                     && mousePos.x < 530 && mousePos.y < 270) {
+                    me.entityPool.add("mainPlayer", game.staticEntity);
+                    me.entityPool.add("blockman", game.PlayerEntity);
                     me.state.change(me.state.PLAY);
                 }
             }
