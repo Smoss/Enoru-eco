@@ -141,7 +141,8 @@ game.TitleScreen = me.ScreenObject.extend({
                 //var mousePos = me.input.globalToLocal(me.input.mouse.pos);
                 var mousePos = me.input.mouse.pos;
                 console.log(mousePos);
-                if(mousePos.x < 20 && mousePos.y < 20) {
+                if(mousePos.x > 195 && mousePos.y > 235
+                    && mousePos.x < 445 && mousePos.y < 305) {
                     me.state.change(me.state.PLAY);
                 }
             }
